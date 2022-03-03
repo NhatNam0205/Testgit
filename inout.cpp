@@ -14,3 +14,10 @@ void addfirst(node *&head, node *&tail, int x){
         tail->next = nullptr;
     }
 } 
+
+void display(node *head){
+    for(auto i = head; i != nullptr; i = i->next){
+        cout << i->value << " ";
+    }
+    cout << endl;
+}
